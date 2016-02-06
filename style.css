@@ -11,10 +11,10 @@ html {
 
 
 body{
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-family: sans-serif;
   color:#fff;
-  background: #050404;
+  background: #2B2D42;
 
 }
 
@@ -39,13 +39,21 @@ section .center {
 
 .trigger {
   position:relative;
-  background-color: #893168;
+  background-color: #EF233C;
   display: inline-block;
   width: 200px;
   height:60px;
   border-radius: 50em;
-  box-shadow: 0 1px 1px rgba(0,0,0,.5), inset 0 1px 0;
-  color:#fff;
+  box-shadow: 0 2px 20px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.2);
+  color:#EDF2F4;
+}
+
+.trigger:hover em {
+  top:-100%;
+}
+
+.trigger:hover i {
+  top: 0;
 }
 
 span, em, i {
@@ -63,4 +71,9 @@ span {
 em {
   line-height: 60px;
 
+}
+
+i{
+  top:100%;
+  background:url("img/icon.svg") no-repeat center center;
 }
