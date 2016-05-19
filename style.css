@@ -11,8 +11,8 @@ html {
 
 
 body{
-  font-size: 1.6rem;
-  font-family: sans-serif;
+  font-size: 1.6em;
+  font-family: 'Inconsolata',sans-serif; ;
   color:#fff;
   background: #2B2D42;
 
@@ -20,9 +20,10 @@ body{
 
 a {
   text-decoration: none;
+  
 }
 
-/*---Tooltip---*/
+/*---button---*/
 
 section {
   width: 100%;
@@ -68,6 +69,10 @@ span {
   overflow:hidden;
 }
 
+em, i {
+  transition: top .3s;
+}
+
 em {
   line-height: 60px;
 
@@ -76,4 +81,13 @@ em {
 i{
   top:100%;
   background:url("img/icon.svg") no-repeat center center;
+}
+
+
+
+.note {
+  margin-top: 150px;
+  font-size: 1em;
+  color: #666666;
+
 }

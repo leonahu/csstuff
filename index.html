@@ -5,31 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <title>CSStuff</title>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <title>Not Just a Pretty Button</title>
   </head>
 
 
 
   <body>
 
-<!-- Button 1 Tooltip-->
+    <!-- Button 1 Tooltip-->
 
       <section>
         <div class="center">
 
-          <a class="trigger" href="#0">
+          <a class="trigger" style="cursor:pointer" target="_blank" onClick="randomlinks()">
             <span>
-              <em>Donate</em><i aria-hidden="true"></i>
+              <em>I am giving luck</em><i aria-hidden="true"></i>
             </span>
 
           </a>
+
+          <div class="note">
+            <p> Not just a pretty button is designed and coded by Leona Hu
+
         </div>
       </section>
 
   </body>
 
   <script type="text/javascript">
+    function randomlinks(){
+        var myrandom=Math.round(Math.random()*9)
+        var links=new Array()
+        links[0]="https://www.sfspca.org/civicrm/contribute/transact?reset=1&id=2"
+        links[1]="https://handup.org/members#category/spotlight"
+        links[2]="https://girlswhocode.com/donate/"
+        links[3]="http://www.guidedogs.com/site/PageServer?pagename=help_donate"
+        links[4]="http://www.pawsweb.org/donate_online.html"
+        links[5]="https://secure.ppaction.org/site/Donation2?df_id=12913&12913.donation=form1&_ga=1.98140829.328565785.1463685921"
+        links[6]="http://www.projecthdesign.org/donate/"
+        links[7]="https://org2.salsalabs.com/o/5420/p/salsa/donation/common/public/?donate_page_KEY=447&track=header_button"
+        links[8]="https://code.org/help"
+        links[9]="http://medasf.org/get-involved/donate/"
 
+        window.location=links[myrandom]
+        }
+</script>
 
-  </script>
 </html>
